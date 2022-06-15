@@ -30,8 +30,10 @@ def save_csv():
     csvpath = Path("qualifying_loan_data.csv")
     with open(csvpath, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
+        # csvwriter.writerow(header) is this necessary?
         for row in qualifying_loan_data:
             csvwriter.writerow(row.values())
+    return qualifying_loan_data
 
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
@@ -119,6 +121,8 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
+    # save_loan = questionary.confirm('Do you want to save the list of qualifying loans?').ask()
+
    
 
 
