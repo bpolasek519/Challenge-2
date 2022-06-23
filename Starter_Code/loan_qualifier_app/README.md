@@ -1,36 +1,55 @@
-# Project Title
+# Loan Qualifying Application
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This application takes a users information (credit score, monthly debt, monthly income, desired loan amount, and home value) and determines which loans the user is qualified to apply for. It is meant to do the loan research work for the user.
 
-*6/15 have created the function `save_csv` to save the qualifying loan data to a csv file.
-
-*6/22 have edited the save_csv file and my written csv is only outputting the first line. still needs edits.
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+This application is written in Python. The Python libraries used are [Python Fire](https://github.com/google/python-fire) and [Questionary](https://github.com/tmbo/questionary). We used Fire so we could allow users to use a CLI and we used Questionary to allow users to have a more friendly and interactive experience.
 
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+Before running Fire and Questionary, you will need to install them first. 
+
+To install Fire, go to your terminal and run the following command:
+
+`pip install fire`
+
+To install Questionary, go to your terminal and run the following command:
+
+`pip install questionary`
 
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+When first launching the application, the first question will be the file path to the rate sheet of all the loans. (The yellow is what the user will have typed).
+
+![File Path](../../../file%20path.png)
+
+After asking for the file path, the application will ask a series of questions to filter out the loans the user qualifies for. 
+
+![Questions](../../../questions.png)
+
+The application will then tell you your monthly debt to income ration and the loan to value ratio and how many loans you qualify for based on the information the user entered above.
+
+![Summary](../../../summary.png)
+
+Finally the app will ask if the user wants to save the list of qualifying loans in a spreadsheet. It will then let the user know if the file has been saved or not. 
 
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+Initially set up by Rice University FinTech Bootcamp.
+
+Edited by Brittanie Polasek.
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+MIT

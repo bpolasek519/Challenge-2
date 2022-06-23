@@ -1,0 +1,47 @@
+    1  cd "c:\Users\britt\Desktop\Fintech-Workspace\Challenge 2\Challenge-2\Starter_Code\loan_qualifier_app"
+    2  python app.py
+    3  python app.py
+    4  python app.py
+    5  python app.py
+    6  python app.py
+    7  python app.py
+    8  python app.py
+    9  python app.py
+   10  python app.py
+   11  python app.py
+   12  python app.py
+   13  python app.py
+   14  python app.py
+   15  python app.py
+   16  python app.py
+   17  python app.py
+   18  python app.py
+   19  python app.py
+   20  python app.py
+   21  python app.py
+   22  python app.py
+   23  python app.py
+   24  python app.py
+   25  python app.py
+   26  cd "c:\Users\britt\Desktop\Fintech-Workspace\Module 2\01_Adding_Fire_to_the_Loan_Qualifier_App\01_Adding_Fire_to_the_Loan_Qualifier_App\Solved"
+   27  python app.py
+   28  ls
+   29  python app.py
+   30  python app.py
+   31  cd "c:\Users\britt\Desktop\Fintech-Workspace\Challenge 2\Challenge-2\Starter_Code\loan_qualifier_app"
+   32  python app.py
+   33  python app.py
+   34  python app.py
+   35  python app.py
+   36  python app.py
+   37  python app.py
+   38  python app.py
+   39  cd ..
+   40  cd ..
+   41  cd ..
+   42  cd "Challenge 2"
+   43  ls
+   44  cd "
+Challenge-2"
+   45  cd "Challenge-2/"
+   46  history 50 > terminal_history.txt
