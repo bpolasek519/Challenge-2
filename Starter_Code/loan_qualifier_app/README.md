@@ -4,6 +4,7 @@ Just after the title, introduce your project by describing attractively what the
 
 *6/15 have created the function `save_csv` to save the qualifying loan data to a csv file.
 
+*6/22 have edited the save_csv file and my written csv is only outputting the first line. still needs edits.
 ---
 
 ## Technologies

@@ -12,7 +12,10 @@ import questionary
 from pathlib import Path
 import csv
 
-from qualifier.utils.fileio import load_csv
+from qualifier.utils.fileio import ( 
+    load_csv,
+    save_csv,
+)
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -24,16 +27,6 @@ from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
 
-def save_csv():
-    qualifying_loan_data = [] #empty list needed to use the save_csv function?
-
-    csvpath = Path("qualifying_loan_data.csv")
-    with open(csvpath, 'w', newline='') as csvfile:
-        csvwriter = csv.writer(csvfile)
-        # csvwriter.writerow(header) is this necessary?
-        for row in qualifying_loan_data:
-            csvwriter.writerow(row.values())
-    return qualifying_loan_data
 
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
@@ -121,11 +114,12 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
-    # save_loan = questionary.confirm('Do you want to save the list of qualifying loans?').ask()
+    questionary.confirm('Do you want to save the list of qualifying loans?').ask()
+    csvpath = Path("./data/qualifying_loans.csv")
+    save_csv(csvpath, qualifying_loans)
 
-   
-
-
+    
+               
 def run():
     """The main function for running the script."""
 
