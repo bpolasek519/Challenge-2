@@ -1,9 +1,3 @@
-    1  cd "c:\Users\britt\Desktop\Fintech-Workspace\Challenge 2\Challenge-2\Starter_Code\loan_qualifier_app"
-    2  python app.py
-    3  python app.py
-    4  python app.py
-    5  python app.py
-    6  python app.py
     7  python app.py
     8  python app.py
     9  python app.py
@@ -45,3 +39,13 @@
 Challenge-2"
    45  cd "Challenge-2/"
    46  history 50 > terminal_history.txt
+   47  git status
+   48  git add Starter_Code/loan_qualifier_app/README.md 
+   49  git add Starter_Code/loan_qualifier_app/app.py 
+   50  git add Starter_Code/loan_qualifier_app/qualifier/utils/fileio.py 
+   51  git add Starter_Code/loan_qualifier_app/qualifying_loans.csv 
+   52  git add terminal_history.txt 
+   53  git status
+   54  git commit -m "Final version of app.py code and README.md"
+   55  git push
+   56  history 50 > terminal_history.txt
